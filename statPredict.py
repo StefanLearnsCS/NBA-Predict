@@ -35,6 +35,5 @@ def statPrediction(firstName, lastName, opponentTeam):
 
     #Genereate response from Gemini
     response = model.generate_content(prompt)
-    print(response.text)
-
-statPrediction("Lebron", "James", "OKC")
+    
+    return response.text
