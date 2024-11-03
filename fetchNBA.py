@@ -56,9 +56,7 @@ def playerStats(firstName, lastName):
         relevant_stats.sort(key=lambda x: x["season"], reverse=True)
         recent_stats = relevant_stats[:5]
 
-        print("Relevant Player Statistics for the 5 Most Recent Seasons: \n")
-        for season in recent_stats:
-            print(season)
-            print()
+        return(recent_stats)
+    
     else:
         print(f"Failed to retrieve data: {response.status_code} - {response.text}")
