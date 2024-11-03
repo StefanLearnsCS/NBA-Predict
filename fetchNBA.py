@@ -25,7 +25,7 @@ def playerStats(firstName, lastName):
                 "age": player_stats.get("age"),  # Age can affect performance
                 "games": player_stats.get("games"),  # Total games played in the season
                 "gamesStarted": player_stats.get("gamesStarted"),  # Games started, indicating a player's role
-                "minutesAverage": player_stats.get("minutesPg") / player_stats.get("games"),  # Minutes per game, a key factor in performance
+                "minutesAverage": int(player_stats.get("minutesPg") / player_stats.get("games")),  # Minutes per game, a key factor in performance
                 "fieldGoals": player_stats.get("fieldGoals"),  # Field goals made
                 "fieldAttempts": player_stats.get("fieldAttempts"),  # Field goal attempts
                 "threeFg": player_stats.get("threeFg"),  # Three-point field goals made
@@ -37,7 +37,7 @@ def playerStats(firstName, lastName):
                 "blocks": player_stats.get("blocks"),  # Blocks, indicating defensive capability
                 "turnovers": player_stats.get("turnovers"),  # Turnovers, negatively impacting overall performance
                 "personalFouls": player_stats.get("personalFouls"),  # Personal fouls, can limit playtime
-                "pointsPerGame": player_stats.get("points") / player_stats.get("games"),  # Total points scored
+                "pointsPerGame": int(player_stats.get("points") / player_stats.get("games")),  # Total points scored
                 "team": player_stats.get("team")  # Team affiliation
             }
 
