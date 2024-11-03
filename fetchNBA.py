@@ -1,6 +1,15 @@
 import requests
 
 def playerStats(firstName, lastName):
+
+    """
+    Fetches and filters relevant NBA player statistics for the specified player.
+
+    Parameters:
+    firstName (str): The first name of the player.
+    lastName (str): The last name of the player.
+    """
+
     #NBA Stats API by swagger, http://b8c40s8.143.198.70.30.sslip.io/index.html
     base_url = "http://b8c40s8.143.198.70.30.sslip.io/api/PlayerDataTotals/name/"
 
